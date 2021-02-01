@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+.container {    
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.app-container{
+    display: flex;
+    min-height: 90vh;
+    width: 80%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
+    position: relative;
+    z-index: 3;
+}
+/* 
+.circle{
+    background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 5%;
+} */
