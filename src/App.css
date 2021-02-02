@@ -28,9 +28,11 @@
     background: linear-gradient(
         to right bottom, 
         rgba(255,255,255,0.7),
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.2)
     );
     backdrop-filter: blur(1rem);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     position: relative;
     z-index: 3;

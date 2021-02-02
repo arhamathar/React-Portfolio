@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { act } from 'react-dom/test-utils';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+    const [active, setActive] = useState('About');
+
+    const onClickHandler = (e) => {
+        console.log(e);
+        setActive(e)
+    }
+
     return (
         <div className="navbar">
             <li className="active">
-                <NavLink activeClassName="active" exact to="/">About</NavLink>
+                <h3 className="acitve-heading">{active}</h3>
             </li>
             <li className="navlinks">
-                <NavLink to="/">About</NavLink>
-                <NavLink to="/resume">Resume</NavLink>
-                <NavLink to="/projects">Project</NavLink>
-            </li>
+                {active !== 'About' && (
+                    <NavLink
+                        onClick={() => onClickHandler('About')}
+                        to="/"
+                    >About</NavLink>
+                )}
+                {active !== 'Resume' && (
+                    <NavLink
+                        onClick={() => onClickHandler('Resume')}
+                        to="/resume"
+                    >Resume</NavLink>
+                )}
+                {active !== 'Projects' && (
+                    <NavLink
+                        onClick={() => onClickHandler('Projects')}
+                        to="/projects"
+                    >Projects</NavLink >
+                )}
+            </li >
         </div >
     );
 }
