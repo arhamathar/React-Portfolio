@@ -1,7 +1,9 @@
 import React from 'react';
 import SkillCard from '../components/Cards/SkillCard'
-import api from '../assets/api.svg';
-import backend from '../assets/backend.svg';
+import Api from '../assets/images/api.svg';
+import Backend from '../assets/images/repair.svg';
+import Frontend from '../assets/images/computer.svg';
+import Puzzle from '../assets/images/puzzle.svg';
 
 function About() {
     return (
@@ -17,22 +19,22 @@ function About() {
             <h2>What I Offer</h2>
             <div className="about-services">
                 <SkillCard
-                    image={api}
+                    image={Frontend}
                     title="Frontend Development"
-                    content="I can build a beautiful and scalable SPA using HTML, CSS and React.js"
+                    content="I can build a beautiful SPA using HTML, CSS and React.js"
                 />
                 <SkillCard
-                    image={backend}
+                    image={Backend}
                     title="Backend Development"
-                    content="Handle NoSql database MongoDb, Node-Express-server and Api using"
+                    content="Handle NoSql database , Node-Express-server and Api using"
                 />
                 <SkillCard
-                    image={api}
+                    image={Api}
                     title="API Development"
                     content="I can develop robust REST API using nodeJs & express"
                 />
                 <SkillCard
-                    image={backend}
+                    image={Puzzle}
                     title="Competitive Coder"
                     content="A daily problem solver in GeeksforGeeks"
                 />

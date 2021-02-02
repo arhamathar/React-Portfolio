@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import avatar from '../../assets/avatar.svg';
+import Avatar from '../../assets/images/avatar.svg';
 import './Sidebar.css';
 
 function Sidebar() {
     return (
         <div className="sidebar">
-            <img className="sidebar-avatar" src={avatar} alt="avatar" />
+            <img className="sidebar-avatar" src={Avatar} alt="avatar" />
             <h3>Arham <span>Athar</span></h3>
             <div>
                 <h4>Web Developer</h4>

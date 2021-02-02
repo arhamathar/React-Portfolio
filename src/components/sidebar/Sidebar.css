@@ -36,3 +36,13 @@
     text-decoration: none;
     color: #426696;
 }
+
+/* @media(max-width: 1200px){
+
+} */
+
+@media(max-width: 986px){
+    .sidebar{
+        width: 100%;
+    }
+}
