@@ -13,8 +13,9 @@ function App() {
                         About
                     </main>
                 </div>
-                {/* <div className="circle"></div> */}
             </div>
+            <div className="circle1"></div>
+            <div className="circle2"></div>
         </BrowserRouter>
     );
 }
