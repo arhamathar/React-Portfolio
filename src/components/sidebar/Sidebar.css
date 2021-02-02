@@ -6,7 +6,11 @@
     justify-content: space-around;
     align-items: center;
     line-height: 1.5;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255,255,255,0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
     max-width: 22%;
     border-radius: 2rem;
     text-align: center;
@@ -15,14 +19,20 @@
 
 .sidebar-avatar{
     width: 10rem;
-    height: 10rem;
+    height: 9rem;
     border-radius: 50%;
     object-fit: contain;
 }
 
 .contact{
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+    background-color: #0575e6a1;
     width: 100%;
     color: #ffffff;
-    margin: 1rem;
+    padding: 1rem 0;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #426696;
 }

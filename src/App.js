@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
 import './App.css';
 
@@ -10,7 +11,7 @@ function App() {
                 <div className="app-container">
                     <Sidebar />
                     <main>
-                        About
+                        <Navbar />
                     </main>
                 </div>
             </div>

@@ -29,9 +29,9 @@ function Sidebar() {
                 <p>arhamathar789@gmail.com</p>
             </div>
             <div className="social-contact">
-                <div>Facebook</div>
-                <div>Instagram</div>
-                <div>LinkedIn</div>
+                <a href="/">Facebook</a>
+                <a href="/">Instagram</a>
+                <a href="/">LinkedIn</a>
             </div>
         </div>
     );
