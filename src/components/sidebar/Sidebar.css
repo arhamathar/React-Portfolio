@@ -24,17 +24,37 @@
     object-fit: contain;
 }
 
+.info{
+    display: flex;
+    align-items: center;
+}
+
 .contact{
-    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
-    background-color: #0575e6a1;
+    background-color: #00f2605c;    
+    /* background: linear-gradient(
+        to left, 
+        rgba(255,255,255,0.2), 
+        rgba(255, 255, 255, 0.1)
+    ); */
     width: 100%;
-    color: #ffffff;
     padding: 1rem 0;
 }
 
 .sidebar a{
     text-decoration: none;
     color: #426696;
+}
+
+.social-contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sidebar-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+
 }
 
 /* @media(max-width: 1200px){

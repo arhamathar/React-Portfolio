@@ -24,7 +24,7 @@
 
 .app-container{
     display: flex;
-    min-height: 80vh;
+    min-height: 90vh;
     width: 80%;
     background: linear-gradient(
         to right bottom, 
@@ -32,16 +32,10 @@
         rgba(255, 255, 255, 0.2)
     );
     backdrop-filter: blur(1rem);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     position: relative;
     z-index: 3;
     color: #426696;
-}
-
-main{
-    flex: 1;
 }
 
 .circle1, .circle2{
@@ -100,5 +94,6 @@ main{
 @media(max-width: 1000px){
     .app-container{
         width: 90%;
+        flex-direction: column;
     }
 }
