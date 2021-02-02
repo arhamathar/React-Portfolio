@@ -1,0 +1,23 @@
+.skillCard{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.8)
+    );
+    padding: 1rem;
+    margin: 1rem ;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(122, 122, 122, 0.2);
+    width: 20rem;
+    max-width: 50%;
+}
+
+.skillCard-logo{
+    height: 3rem;
+    width: 3rem;
+}
+
+.skillCard-body{
+    margin-left: 1rem;
+}
