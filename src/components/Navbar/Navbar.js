@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
-import { act } from 'react-dom/test-utils';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-    const [active, setActive] = useState('About');
+    const [active, setActive] = useState('');
+    const query = useLocation();
+
+    useEffect(() => {
+        if (query.pathname === "/") {
+            setActive("About");
+        }
+        else if (query.pathname === "/resume") {
+            setActive("Resume");
+        }
+        else if (query.pathname === "/projects") {
+            setActive("Projects");
+        }
+    }, [query]);
 
     const onClickHandler = (e) => {
-        console.log(e);
         setActive(e)
     }
 
