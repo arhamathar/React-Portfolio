@@ -5,12 +5,16 @@
         rgba(255, 255, 255, 0.8)
     );
     padding: 1rem;
-    margin: 1rem ;
     display: flex;
+    align-items: center;
     border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1.5rem rgba(122, 122, 122, 0.2);
-    width: 20rem;
-    max-width: 50%;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(122, 122, 122, 0.25);
+    /* width: 20rem;
+    max-width: 50%; */
+}
+
+.skillCard:nth-child(2n){
+    margin-right: 1rem;
 }
 
 .skillCard-logo{
@@ -20,4 +24,9 @@
 
 .skillCard-body{
     margin-left: 1rem;
+}
+
+.skillCard-body h5{
+    font-size: 1.25rem;
+    font-weight: 500;
 }

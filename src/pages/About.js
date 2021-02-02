@@ -7,9 +7,8 @@ function About() {
     return (
         <div className="about">
             <p>
-                I am currently Computer Science Second Year Student at Jamia Millia
+                I am currently C.S.E Second Year Student at Jamia Millia
                 Islamia, New Delhi.
-
             </p>
             <p>
                 I describe myself as someone who's persistant, a quick learner
