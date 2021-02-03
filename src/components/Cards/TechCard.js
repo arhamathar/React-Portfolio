@@ -1,22 +1,14 @@
 import React from 'react';
+import TechList from '../TechList';
 
 function TechCard(props) {
     return (
-        <article className="languages">
-            <h3>Languages</h3>
+        <article className={props.className}>
+            <header>{props.heading}</header>
             <div>
-                <div className="skill-info">
-                    <img className="skill-info__logo" src={props.Javascript} alt="js" />
-                    <p>Javascript</p>
-                </div>
-                <div className="skill-info">
-                    <img className="skill-info__logo" src={props.Python} alt="python" />
-                    <p>Python</p>
-                </div>
-                <div className="skill-info">
-                    <img className="skill-info__logo" src={props.Cpp} alt="c++" />
-                    <p>C++</p>
-                </div>
+                <TechList />
+                <TechList />
+                <TechList />
             </div>
         </article>
     );
