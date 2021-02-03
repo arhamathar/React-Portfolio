@@ -22,8 +22,13 @@
     background-attachment: fixed;  
 }
 
+main{
+    width: 100%;
+}
+
 .app-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     min-height: 90vh;
     width: 80%;
     background: linear-gradient(
@@ -38,7 +43,7 @@
     color: #426696;
 }
 
-.circle1, .circle2{
+.circle1, .circle2, .circle3{
     background: linear-gradient(
         to right bottom, 
         rgba(255,255,255,0.8),
@@ -53,6 +58,7 @@
 .circle1{
     bottom: 1%;
     left: 2%;
+    box-shadow: -0.5rem -0.5rem 2rem rgb(255,255,255,0.4);
 }
 
 .circle2 {
@@ -60,9 +66,19 @@
     right: 2%;
 }
 
+.circle3 {
+    bottom: 1%;
+    right: 2%;
+}
+
+/* =======================   ABOUT PAGE   ============================*/
 .about{
     margin: 2rem;
     line-height: 1.5;
+}
+
+.about h2{
+    margin: 2rem 0 1rem;
 }
 
 .about p{
@@ -74,7 +90,6 @@
     grid-template-columns: 50% 50%;
     grid-column-gap: 1rem;
     grid-row-gap: 2rem;
-    margin-top: 5%;
 }
 
 .about-services p{
@@ -94,6 +109,12 @@
 @media(max-width: 1000px){
     .app-container{
         width: 90%;
-        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 900px){
+    .app-container{
+        grid-template-columns: 1fr;
     }
 }
