@@ -3,8 +3,8 @@ import React from 'react';
 const TechList = (props) => {
     return (
         <div className="skill-info">
-            <img className="skill-info__logo" src={props.Javascript} alt="js" />
-            <p>Javascript</p>
+            <img className="skill-info__logo" src={props.skill.icon} alt={props.skill.alt} />
+            <p>{props.skill.name}</p>
         </div>
     );
 }

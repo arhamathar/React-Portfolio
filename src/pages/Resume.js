@@ -10,8 +10,8 @@ function Resume() {
             </div>
             <div className="skills">
                 <TechCard className="languages" heading="Languages" />
-                <TechCard className="technologies" heading="Technologies" />
                 <TechCard className="tools" heading="Tools" />
+                <TechCard className="technologies" heading="Technologies" />
             </div>
         </div>
     );
