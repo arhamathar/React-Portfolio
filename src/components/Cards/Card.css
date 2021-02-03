@@ -14,21 +14,25 @@
 }
 
 .skillCard:nth-child(2n){
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
 .skillCard-logo{
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .skillCard-body{
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .skillCard-body h5{
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.skillCard-body p{
+    font-size: 1.5rem;
 }
 
 @media(max-width: 1200px){
