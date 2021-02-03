@@ -132,7 +132,7 @@ main{
         width: 90%;
     }
 }
-
+ 
 @media(max-width: 900px){
     .app-container{
         grid-template-columns: 1fr;
