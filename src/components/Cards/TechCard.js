@@ -17,12 +17,12 @@ function TechCard(props) {
     }
     else if (props.heading === 'Technologies') {
         element = technologies.map(technology => {
-            return <TechList skill={technology} key={technologies.id} />
+            return <TechList skill={technology} key={technology.id} />
         });
     }
 
     return (
-        <article className="techcard-content">
+        <article className={`${props.heading} techcard-content`}>
             <header className="title">{props.heading}</header>
             <div className="skill-box">
                 {element}

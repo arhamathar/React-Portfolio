@@ -47,6 +47,11 @@
     
 }
 
+.Technologies{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .title{
     font-size: 2.25rem;
     font-weight: 600;
@@ -75,5 +80,12 @@
 @media(max-width: 1200px){
     .skillCard:nth-child(2n){
         margin-right: 0;
+    }
+}
+
+@media(max-width: 780px){
+    .Technologies{
+        grid-column-start: auto;
+        grid-column-end: auto;
     }
 }

@@ -20,9 +20,9 @@ function Resume() {
                 </div>
             </div>
             <div className="skills">
-                <TechCard className="languages" heading="Languages" />
-                <TechCard className="tools" heading="Tools" />
-                <TechCard className="technologies" heading="Technologies" />
+                <TechCard heading="Languages" />
+                <TechCard heading="Tools" />
+                <TechCard heading="Technologies" />
             </div>
         </div>
     );
