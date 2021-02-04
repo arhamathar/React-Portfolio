@@ -19,11 +19,11 @@ function Resume() {
                     <p>Jamia Millia Islamia <strong>(2019-2023)</strong></p>
                 </div>
             </div>
-            <div className="skills">
+            <section className="skills">
                 <TechCard heading="Languages" />
                 <TechCard heading="Tools" />
                 <TechCard heading="Technologies" />
-            </div>
+            </section>
         </div>
     );
 }
