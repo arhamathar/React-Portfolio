@@ -21,7 +21,7 @@ function About() {
                 <SkillCard
                     image={Frontend}
                     title="Frontend Development"
-                    content="I can build a beautiful SPA using HTML, CSS and React.js"
+                    content="I can build beautiful SPA using HTML, CSS and React.js"
                 />
                 <SkillCard
                     image={Backend}
