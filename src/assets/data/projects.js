@@ -1,9 +1,11 @@
-import Notes from '../images/project-2.png';
+import Notes from '../images/notes.jpg';
+import Weather from '../images/weather.jpg';
+import Cocktail from '../images/cocktail.jpg';
 
 const projects = [
     {
         name: 'Weather App',
-        image: Notes,
+        image: Weather,
         deployed_url: 'https://arham-weather.netlify.app/',
         github_url: 'https://github.com/arhamathar/PWA-Weather',
         category: ['react.js']
@@ -12,22 +14,22 @@ const projects = [
         name: 'Notes Keeper',
         image: Notes,
         deployed_url: 'https://arham-notes-keeper.netlify.app/',
-        github_url: 'https://github.com/Dey-Sumit/Dev-talks',
-        category: ['node.js', 'mongoDB', 'react.js']
+        github_url: 'https://github.com/arhamathar/Notes-keeper',
+        category: ['react.js']
+    },
+    {
+        name: 'Cocktail',
+        image: Cocktail,
+        deployed_url: 'https://the-cocktail.netlify.app/',
+        github_url: 'https://github.com/arhamathar/cocktail-react-app',
+        category: ['react.js']
     },
     {
         name: 'Photogram',
-        image: Notes,
-        deployed_url: '',
-        github_url: '',
-        category: ['react.js', 'nodejs', 'mongoDB']
-    },
-    {
-        name: 'Burger Builder',
-        image: Notes,
-        deployed_url: '',
-        github_url: '',
-        category: ['react.js', 'firebase']
+        // image: Notes,
+        deployed_url: 'https://github.com/arhamathar/Photogram-backend',
+        github_url: 'https://github.com/arhamathar/Photogram-backend',
+        category: ['mongoDb', 'react.js', 'nodejs']
     },
 ]
 
