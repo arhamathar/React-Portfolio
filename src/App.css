@@ -135,6 +135,19 @@ main{
     margin-top: 2.5rem;
 }
 
+/* =======================   PROJECT PAGE   ============================*/
+
+.projects-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2rem;    
+    grid-column-gap: 2rem;
+    margin: 2.5rem;
+}
+
+
+/* =======================   MEDIA QUERY   ============================*/
+
 
 @media(max-width: 1200px){
     .app-container{
@@ -169,7 +182,6 @@ main{
         grid-template-columns: 1fr;
     }
 }
-
 
 @media(max-width: 500px){
     .circle3 {

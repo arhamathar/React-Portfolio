@@ -76,6 +76,46 @@
     margin-bottom: 1rem;
 }
 
+/* =============================  PROJECT CARD  ============================= */
+
+.project-card{    
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.8)
+    );
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(122, 122, 122, 0.25);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-container a{
+    text-decoration: none;
+}
+
+.project-card__img{
+    width: 100%;
+}
+
+.project-info{
+    width: 100%;
+}
+
+.project-info__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /* =============================  Media Query  ============================= */
 @media(max-width: 1200px){
     .skillCard:nth-child(2n){
