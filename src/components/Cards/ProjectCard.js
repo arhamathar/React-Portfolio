@@ -4,13 +4,13 @@ const ProjectCard = (props) => {
     return (
         <div className="project-card">
             <figure className="project-container">
-                <a href={props.deployed_url}>
-                    <img src={props.image} alt={props.title} />
+                <a href={props.project.deployed_url}>
+                    <img src={props.project.image} alt={props.project.name} />
                 </a>
                 <div className="project-info">
-                    <h2>{props.title}</h2>
+                    <h2>{props.project.name}</h2>
                     <div>
-                        <a href={props.github_url}>Repo Link</a>
+                        <a href={props.project.github_url}>Repo Link</a>
                         <button>Detils</button>
                     </div>
                 </div>
