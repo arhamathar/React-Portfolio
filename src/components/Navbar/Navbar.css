@@ -21,9 +21,14 @@
 
 .active h3{
     font-size: 4rem;
-    border-bottom: 5px solid #426696;
+    border-bottom: 5px solid #2ebf91;
     font-weight: 600;
     margin-right: 0;
+}
+
+.navbar a:hover{
+    border-bottom: 5px solid #2ebf91;
+    
 }
 
 @media(max-width: 500px){

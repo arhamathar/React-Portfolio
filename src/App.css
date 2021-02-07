@@ -14,8 +14,9 @@ html{
 }
 
 .container {    
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     background: linear-gradient(to right top, #00f260, #4286f4);
+    background: linear-gradient(to right top, #2ebf91, #8360c3);
+    background: linear-gradient(to right top, #2ebf91, #4286f4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,15 +137,16 @@ main{
 }
 
 /* =======================   PROJECT PAGE   ============================*/
-.projects{
-    overflow-y: auto;
-}
 
 .projects-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    margin: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    /* grid-gap: 2rem; */
+    margin: 5rem 0;
+    max-height: 70vh;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 

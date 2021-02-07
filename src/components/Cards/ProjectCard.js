@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
                     <img className="project-card__img" src={props.project.image} alt={props.project.name} />
                 </a>
                 <div className="project-info">
-                    <h2>{props.project.name}</h2>
+                    <h3>{props.project.name}</h3>
                     <div className="project-info__links">
                         <a href={props.project.github_url}>Repo Link</a>
                         <button>Detils</button>
