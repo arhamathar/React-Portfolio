@@ -126,7 +126,31 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-weight: 400;
+}
+
+.project-info__links a{
+    display: flex;
+    align-items: center;
+    color: inherit;
     font-size: 1.75rem;
+}
+
+.links-btn{
+    border: none;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+.project-info__links a:hover{
+    color: #2ebf91;
+}
+
+.links-btn:hover{
+    color: #2ebf91;
 }
 
 /* =============================  Media Query  ============================= */
