@@ -7,6 +7,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .body{
@@ -149,6 +150,18 @@ main{
     justify-content: center;
 }
 
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{  
+    background-color: #2ebf91;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4286f4; 
+}
 
 /* =======================   MEDIA QUERY   ============================*/
 
