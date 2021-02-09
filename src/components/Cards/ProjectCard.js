@@ -2,6 +2,7 @@ import React from 'react';
 import Github from '../../assets/images/github.svg';
 
 const ProjectCard = (props) => {
+
     return (
         <div className="project-card">
             <figure className="project-container">
@@ -23,7 +24,13 @@ const ProjectCard = (props) => {
                             <img src={Github} alt="github" />&nbsp;
                             <span>Repo Link</span>
                         </a>
-                        <button className="links-btn">Detils</button>
+                        <button
+                            type="button"
+                            className="links-btn"
+                            onClick={props.open}
+                        >
+                            Detils
+                        </button>
                     </div>
                 </div>
             </figure>
