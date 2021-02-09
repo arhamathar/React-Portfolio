@@ -16,9 +16,9 @@ function Projects() {
 
     return (
         <section className="projects-list">
-            <Modal show={show} />
+            <Modal show={show} close={closeModal} />
             {projects.map(project => {
-                return <ProjectCard project={project} open={showModal} close={closeModal} />
+                return <ProjectCard project={project} open={showModal} />
             })}
         </section>
     );
