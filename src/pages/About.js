@@ -1,9 +1,6 @@
 import React from 'react';
-import SkillCard from '../components/Cards/SkillCard'
-import Api from '../assets/images/api.svg';
-import Backend from '../assets/images/repair.svg';
-import Frontend from '../assets/images/computer.svg';
-import Puzzle from '../assets/images/puzzle.svg';
+import SkillCard from '../components/Cards/SkillCard';
+import skills from '../assets/data/about';
 
 function About() {
     return (
@@ -18,26 +15,9 @@ function About() {
             </p>
             <h2>What I Offer</h2>
             <div className="about-services">
-                <SkillCard
-                    image={Frontend}
-                    title="Frontend Development"
-                    content="I can build beautiful SPA using HTML, CSS and React.js"
-                />
-                <SkillCard
-                    image={Backend}
-                    title="Backend Development"
-                    content="Handle NoSql database , Node-Express-server and Api using"
-                />
-                <SkillCard
-                    image={Api}
-                    title="API Development"
-                    content="I can develop robust REST API using nodeJs & express"
-                />
-                <SkillCard
-                    image={Puzzle}
-                    title="Competitive Coder"
-                    content="A daily problem solver in GeeksforGeeks"
-                />
+                {skills.map(skill => {
+                    return <SkillCard skills={skill} />
+                })}
             </div>
         </div>
     );
