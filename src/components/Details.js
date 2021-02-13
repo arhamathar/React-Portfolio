@@ -11,11 +11,9 @@ const Details = () => {
             </p>
             <p>
                 <span>Tech Used: </span>
-                <ul>
-                    <li>Create React App</li>
-                    <li>Open Weather Api</li>
-                    <li>Service Workers</li>
-                </ul>
+                <li>Create React App</li>
+                <li>Open Weather Api</li>
+                <li>Service Workers</li>
             </p>
         </div>
     );

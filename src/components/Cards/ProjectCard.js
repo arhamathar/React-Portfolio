@@ -27,14 +27,14 @@ const ProjectCard = (props) => {
                         <button
                             type="button"
                             className="links-btn"
-                            onClick={props.open}
+                            onClick={(e) => props.open(e, props.project.name)}
                         >
                             Detils
                         </button>
                     </div>
                 </div>
             </figure>
-        </div>
+        </div >
     );
 }
 

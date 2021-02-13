@@ -6,7 +6,7 @@ function Projects(props) {
     return (
         <section className="projects-list">
             {projects.map(project => {
-                return <ProjectCard project={project} open={props.showModal} />
+                return <ProjectCard key={project.name} project={project} open={props.showModal} />
             })}
         </section>
     );

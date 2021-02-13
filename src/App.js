@@ -13,7 +13,7 @@ import Details from './components/Details';
 function App() {
     const [show, setShow] = useContext(ModalContext);
 
-    const showModal = (id) => {
+    const showModal = (e, id) => {
         setShow(true)
     }
 
