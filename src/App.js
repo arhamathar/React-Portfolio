@@ -8,11 +8,12 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import './App.css';
 import { ModalContext } from './context/ModalContext';
+import Details from './components/Details';
 
 function App() {
     const [show, setShow] = useContext(ModalContext);
 
-    const showModal = () => {
+    const showModal = (id) => {
         setShow(true)
     }
 
@@ -23,7 +24,9 @@ function App() {
     return (
         <BrowserRouter>
             <div className="container">
-                <Modal show={show} close={closeModal} />
+                <Modal show={show} close={closeModal} >
+                    <Details />
+                </Modal>
                 <div className="app-container">
                     <Sidebar />
                     <main>
