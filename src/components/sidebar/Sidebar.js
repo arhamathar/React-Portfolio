@@ -38,7 +38,7 @@ function Sidebar() {
                 <p>arhamathar789@gmail.com</p>
             </div>
             <div className="social-contact">
-                <a href="/">
+                <a href="https://www.facebook.com/Arham.athar.789">
                     <img className="sidebar-icon" src={Facebook} alt="facebook" />
                 </a>
                 <a href="https://www.instagram.com/athararham/">
