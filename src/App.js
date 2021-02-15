@@ -9,11 +9,17 @@ import Projects from './pages/Projects';
 import './App.css';
 import { ModalContext } from './context/ModalContext';
 import Details from './components/Details';
+import details from './assets/data/details';
 
 function App() {
     const [show, setShow] = useContext(ModalContext);
 
     const showModal = (e, id) => {
+        console.log(id);
+        const res = details.filter(detail => {
+            return details.id === id
+        });
+        console.log(res);
         setShow(true)
     }
 
