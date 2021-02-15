@@ -16,10 +16,9 @@ function App() {
 
     const showModal = (e, id) => {
         console.log(id);
-        const res = details.filter(detail => {
-            return details.id === id
-        });
-        console.log(res);
+        const projectDetails = details.find((project) => {
+            return project.id === id;
+        })
         setShow(true)
     }
 
