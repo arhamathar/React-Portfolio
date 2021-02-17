@@ -1,24 +1,12 @@
-import React, { useState } from 'react';
-import Modal from '../components/UI/Modal';
+import React from 'react';
 import projects from '../assets/data/projects';
 import ProjectCard from '../components/Cards/ProjectCard';
 
-function Projects() {
-    const [show, setShow] = useState(false);
-
-    const showModal = (e) => {
-        setShow(true);
-    }
-
-    const closeModal = (e) => {
-        setShow(false);
-    }
-
+function Projects(props) {
     return (
         <section className="projects-list">
-            <Modal show={show} close={closeModal} />
             {projects.map(project => {
-                return <ProjectCard project={project} open={showModal} />
+                return <ProjectCard project={project} open={props.showModal} />
             })}
         </section>
     );
