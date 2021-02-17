@@ -8,11 +8,17 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import './App.css';
 import { ModalContext } from './context/ModalContext';
+import Details from './components/Details';
+import details from './assets/data/details';
 
 function App() {
     const [show, setShow] = useContext(ModalContext);
 
-    const showModal = () => {
+    const showModal = (e, id) => {
+        console.log(id);
+        const projectDetails = details.find((project) => {
+            return project.id === id;
+        })
         setShow(true)
     }
 
@@ -23,7 +29,9 @@ function App() {
     return (
         <BrowserRouter>
             <div className="container">
-                <Modal show={show} close={closeModal} />
+                <Modal show={show} close={closeModal} >
+                    <Details />
+                </Modal>
                 <div className="app-container">
                     <Sidebar />
                     <main>

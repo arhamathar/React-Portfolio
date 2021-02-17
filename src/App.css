@@ -163,6 +163,29 @@ main{
     background: #4286f4; 
 }
 
+
+/* =======================   ABOUT PAGE   ============================*/
+
+.details{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #2b476d;
+    letter-spacing: 1px;
+    line-height: 1.75;
+}
+
+.details>h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.details span{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
 /* =======================   MEDIA QUERY   ============================*/
 
 
@@ -204,6 +227,12 @@ main{
     .circle3 {
         bottom: -10%;
         right: 2%;
+    }
+    .details{
+        line-height: 1.5;
+    }
+    .info_name{
+        text-align: center;
     }
 }
 
