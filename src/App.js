@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
@@ -13,12 +13,14 @@ import details from './assets/data/details';
 
 function App() {
     const [show, setShow] = useContext(ModalContext);
+    const [projectDetails, setProjectDetails] = useState();
 
     const showModal = (e, id) => {
-        console.log(id);
-        const projectDetails = details.find((project) => {
+        const currentDetail = details.find((project) => {
             return project.id === id;
-        })
+        });
+
+        setProjectDetails(currentDetail);
         setShow(true)
     }
 
@@ -30,7 +32,7 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Modal show={show} close={closeModal} >
-                    <Details />
+                    <Details details={projectDetails} />
                 </Modal>
                 <div className="app-container">
                     <Sidebar />

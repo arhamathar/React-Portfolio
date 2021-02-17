@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Details = () => {
+const Details = (props) => {
+    console.log(props.details.title);
     return (
         <div className="details">
-            <h2>Weather App</h2>
+            <h2>{props.details.title}</h2>
             <p>
                 <span className="info_name">Description:- </span><br />
-                This is a beautiful PWA weather app which uses service workers
-                to cache data and works even if the users is offline.
+                {props.details.description}
             </p>
             <p>
                 <span className="info_name">Tech Used:- </span>
-                <li>Create React App</li>
-                <li>Open Weather Api</li>
-                <li>Service Workers</li>
+                {props.details.techs.map((tech, index) => {
+                    return <li key={index}>{tech}</li>
+                })}
             </p>
         </div>
     );
