@@ -1,6 +1,7 @@
 import Notes from '../images/notes.jpg';
 import Weather from '../images/weather.jpg';
 import Cocktail from '../images/cocktail.jpg';
+import Photogram from '../images/photogram.jpg';
 
 const projects = [
     {
@@ -26,7 +27,7 @@ const projects = [
     },
     {
         name: 'Photogram',
-        // image: Notes,
+        image: Photogram,
         deployed_url: 'https://github.com/arhamathar/Photogram-backend',
         github_url: 'https://github.com/arhamathar/Photogram-backend',
         category: ['mongoDb', 'react.js', 'nodejs']

@@ -13,7 +13,12 @@ import details from './assets/data/details';
 
 function App() {
     const [show, setShow] = useContext(ModalContext);
-    const [projectDetails, setProjectDetails] = useState();
+    const [projectDetails, setProjectDetails] = useState({
+        id: "",
+        title: "",
+        description: "",
+        techs: []
+    });
 
     const showModal = (e, id) => {
         const currentDetail = details.find((project) => {
