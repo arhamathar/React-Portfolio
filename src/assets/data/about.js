@@ -26,7 +26,7 @@ const skills = [
         icon: Puzzle,
         alt: Puzzle,
         title: "Competitive Coder",
-        content: "A daily problem solver in GeeksforGeeks"
+        content: "A daily problem solver in Hackerrank & GeeksforGeeks"
     }
 ]
 

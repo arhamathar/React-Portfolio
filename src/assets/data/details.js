@@ -12,9 +12,9 @@ const details = [
     {
         id: "Notes Keeper",
         title: "Notes Keeper",
-        description: "A simple notes keeping app where a user can Add & Delete notes. The data is stored in the Local Storage of the browser.",
+        description: "A simple notes keeping app where a user can Add, Edit, & Delete notes. The data is stored in the Local Storage of the browser. The notes can have different background colors.",
         techs: [
-            "Create React App", "Local Storage Api", "Material UI"
+            "Create React App", "Local Storage Api", "Material UI", "React Color Picker"
         ]
     },
     {
